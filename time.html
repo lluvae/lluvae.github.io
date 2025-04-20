@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+margin: 0;
+background-color: #f0f0f0; /* Цвет фона для контраста */
+text-align: center; /* Центрирование текста */
+}
+
+h1 {
+color: dark pink; /* Цвет текста */
+font-family: 'Brush Script MT', cursive; /* Пример необычного шрифта */
+font-size: 48px; /* Размер шрифта */
+margin-top:260px; /* Отступ сверху */
+}
+
+h2 {
+color: pink; /* Цвет текста */
+font-family: 'arial', cursive; /* Пример необычного шрифта */
+font-size: 30px; /* Размер шрифта */
+margin-top:500px; /* Отступ сверху */
+}
+
+
+/* Дополнительный стиль для центрирования h1 по горизонтали */
+h1 {
+position: absolute;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+}
+
+h2 {
+position: absolute;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+}
+
+</style>
+</head>
+<body>
+
+<h1>we're together:</h1>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Forward Timer</title>
+<style>
+body {
+background-color: #ffe6f2;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+font-family: Arial, sans-serif;
+color: #d5006d;
+}
+.timer {
+background-color: #fff;
+border-radius: 10px;
+padding: 20px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+text-align: center;
+font-size: 2em;
+}
+</style>
+</head>
+<body>
+<p> <div class="timer" id="timer">
+0 days 0 hours 0 minutes 0 seconds
+</div>
+
+<script>
+function updateTimer() {
+const startDate = new Date("2019-04-21T00:00:00");
+const now = new Date();
+const duration = now - startDate;
+
+const seconds = Math.floor((duration / 1000) % 60);
+const minutes = Math.floor((duration / (1000 * 60)) % 60);
+const hours = Math.floor((duration / (1000 * 60 * 60)) % 24);
+const days = Math.floor(duration / (1000 * 60 * 60 * 24));
+
+document.getElementById("timer").textContent = `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds`;
+}
+
+setInterval(updateTimer, 1000);
+updateTimer(); // initial call to display the timer immediately</p>
+</script>
+</body>
+</html>  
+
+
+<!DOCTYPE html>
+<html lang="ru">
+<body>
+<h2> мы будем вместе до тех пор,
+<br>пока время не остановится.
+<br> я буду любить тебя, пока время <U> не остановится</U>. </h2>
+
+<style>
+.arrow-button {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: pink;
+color: white;
+border: none;
+padding: 10px 15px;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+display: flex;
+align-items: center;
+}
+
+.arrow {
+margin-left: 5px;
+display: inline-block;
+width: 0;
+height: 0;
+border-top: 5px solid transparent;
+border-bottom: 5px solid transparent;
+border-left: 10px solid white;
+}
+</style>
+</head>
+<body>
+
+<a href="loveis.html">
+<button class="arrow-button">
+любовь это??
+<span class="arrow"></span>
+</button>
+</a>
+
+</body>
+</html></p> </div>
+ </script> </div> </body> </html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<audio autoplay loop>
+<source src="C:\Users\ahsan\OneDrive\Рабочий стол\zvuk-chasov.mp3" type="audio/mpeg">
+Ваш браузер не поддерживает аудиофайлы.
+</audio>
+
+
+</body>
+</html>
+

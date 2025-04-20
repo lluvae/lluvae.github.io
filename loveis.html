@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>love is</title>
+<style>
+body {
+margin: 0;
+overflow: hidden; /* Скрыть прокрутку */
+background-color: white; /* Розовый фон */
+font-family: 'Arial', sans-serif;
+}
+
+.heart {
+position: absolute;
+width: 50px;
+height: 50px;
+background-image: url('heart.png'); /* Замените на путь к вашему изображению сердечка */
+background-size: cover;
+animation: fly 5s linear infinite; /* Анимация для сердечек */
+}
+
+
+@keyframes fly {
+0% { transform: translateY(0); opacity: 1; }
+100% { transform: translateY(100vh); opacity: 0; } /* Убираем сердечки вверх */
+}
+
+.image {
+position: absolute;
+width: 250px; /* Ширина изображения */
+height: 300px; /* Высота изображения */
+opacity: 0;
+}
+
+#image1 {
+top: 45px;
+left: 100px;
+animation: appear 2s forwards 1s; /* Появление первой картинки */
+}
+
+#image2 {
+top: 45px;
+right: 100px;
+animation: appear 2s forwards 3s; /* Появление второй картинки */
+}
+
+#image3 {
+bottom: 45px;
+left: 100px;
+animation: appear 2s forwards 5s; /* Появление третьей картинки */
+}
+
+#image4 {
+bottom: 45px;
+right: 100px;
+animation: appear 2s forwards 7s; /* Появление четвертой картинки */
+}
+
+@keyframes appear {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+
+.text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 32px;
+color: #F64A8A;
+font-family: 'Brush Script MT', cursive; /* Желаемый шрифт */
+text-align: center;
+opacity: 0;
+animation: textFadeIn 2s forwards 9s; /* Появление текста */
+}
+
+@keyframes textFadeIn {
+0% { opacity: 0; }
+100% { opacity: 1; }
+}
+</style>
+</head>
+<body>
+
+
+
+<script>
+// Функция для создания сердечек
+function createHearts() {
+for (let i = 0; i < 20; i++) {
+const heart = document.createElement('div');
+heart.className = 'heart';
+heart.style.left = Math.random() * window.innerWidth + 'px'; // случайная позиция по горизонтали
+heart.style.animationDuration = (Math.random() * 5 + 5) + 's'; // случайная скорость анимации
+heart.style.animationDelay = Math.random() * 10 + 's'; // случайная задержка
+document.body.appendChild(heart);
+}
+}
+
+createHearts(); // Создание сердечек
+</script>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Фоновая музыка</title>
+</head>
+<body>
+
+<!-- Кнопка для воспроизведения музыки -->
+<button id="playBtn">music</button>
+
+<audio id="backgroundMusic" loop>
+<source src="song.mp4" type="audio/mp4">
+Ваш браузер не поддерживает аудиофайлы.
+</audio>
+
+<script>
+const playBtn = document.getElementById('playBtn');
+const backgroundMusic = document.getElementById('backgroundMusic');
+
+playBtn.addEventListener('click', () => {
+backgroundMusic.play();
+});
+</script>
+
+</body>
+<!-- Картинки в углах -->
+<img id="image1" class="image" src="image1.png" alt="Картинка 1"> <!-- Замените на путь к вашему изображению -->
+<img id="image2" class="image" src="image2.png" alt="Картинка 2"> <!-- Замените на путь к вашему изображению -->
+<img id="image3" class="image" src="image3.png" alt="Картинка 3"> <!-- Замените на путь к вашему изображению -->
+<img id="image4" class="image" src="image4.png" alt="Картинка 4"> <!-- Замените на путь к вашему изображению -->
+
+<!-- Текст по центру -->
+<div class="text">любовь — это то чувство, которое наполняет мою душу светом, даже если ты далеко. любовь — это теплота, которую я ощущаю, когда думаю о твоей улыбке и твоем смехе. любовь — это поддержка и понимание, когда нам трудно, и уверенность, что мы вместе, несмотря на расстояние. любовь — это желание делиться каждым моментом своей жизни, даже если мы можем только писать друг другу сообщения. любовь — это мечта о нашей встрече, когда я смогу обнять тебя и сказать, как много ты для меня значишь. любовь — это осознание, что ты всегда в моем сердце, и что ничто не может разлучить нас.</div>
+<style>
+.arrow-button {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: pink;
+color: white;
+border: none;
+padding: 10px 15px;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+display: flex;
+align-items: center;
+}
+
+.arrow {
+margin-left: 5px;
+display: inline-block;
+width: 0;
+height: 0;
+border-top: 5px solid transparent;
+border-bottom: 5px solid transparent;
+border-left: 10px solid white;
+}
+</style>
+</head>
+<body>
+
+<a href="gift2.html">
+<button class="arrow-button">
+тыкай сюда
+<span class="arrow"></span>
+</button>
+</a>
+
+</body>
+</html></p> </div>
+ </script> </div> </body> </html>
+
+
+</body>
+</html>
